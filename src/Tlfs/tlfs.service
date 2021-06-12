@@ -1,0 +1,11 @@
+[Unit]
+Description=Tape Library File System
+After=multi-user.target
+
+[Service]
+Type=simple
+Environment=DOTNET_CLI_HOME=/temp
+ExecStart=/usr/bin/dotnet /srv/tlfs/src/Tlfs/bin/Debug/netcoreapp3.1/Tlfs.dll
+
+[Install]
+WantedBy=multi-user.target

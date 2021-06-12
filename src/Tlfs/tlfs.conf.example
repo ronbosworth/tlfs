@@ -1,0 +1,5 @@
+mountpoint=/mnt/tlfs
+pghost=127.0.0.1
+pguser=postgres
+pgpass=password
+log level=debug
